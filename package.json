@@ -1,0 +1,12 @@
+{
+  "name"        : "sendbox"
+, "version"     : "0.9.4"
+, "description" : "Simple Alternative to Promises"
+, "main"        : "sendbox.js"
+,
+  "scripts":
+  {  "test": "node test.js"
+  }
+  , "author"  : "Panu Viljamaa"
+  , "license" : "Apache 2.0"
+}

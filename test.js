@@ -1,6 +1,4 @@
-﻿<!DOCTYPE html>
-<!--
-
+/* =========================================
    Copyright 2018 Class Cloud LLC
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,35 +13,21 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
--->
+	 =========================================== */
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Box test_browser</title>
+let {ok, fails, x, log, err, eq
+    } = require ('./cisf/cisf.js');
 
-<script src='./cisf/cisf.js'></script>
-
-<script src="sendBox.js"></script>
-<script type="text/javascript">
-
-/*
-issue: when delivering box-tests for the browser
-how do we ensure CISF is there as well?
- */
-
+let Box = require ("../sendBox");
 
 testBox ();
 
 
 function testBox ( )
 {
-
-  let Box = SEND_BOX;
-
 	syncTest        		();
 	parTest         		();
-
+	
 	condTest        		();
 	parAndCondTest  		();
   nodeJsApiTest       ();
@@ -52,7 +36,7 @@ function testBox ( )
 
 	errorTest           ();
   onSendAfterSendTest ();
-
+  
 	asyncSendTest       ();
 	asyncHandlersTest   ();
   timeoutTest         ();
@@ -1058,12 +1042,3 @@ function eh (anError)
 
 } // end testBox()
 
-
-
-</script>
-
-</head>
-<body>
- ... testing ....
-</body>
-</html>
