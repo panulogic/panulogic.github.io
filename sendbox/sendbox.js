@@ -206,7 +206,8 @@ function EH_of_fromUrl_node (e)
       { let box = new Box();
         let xhr = new XMLHttpRequest();
         let $xhr = xhr;
-        xhr.onreadystatechange 
+        xhr.onreadystatechange
+        
 
           function (evt)
           { let xhr = $xhr;
