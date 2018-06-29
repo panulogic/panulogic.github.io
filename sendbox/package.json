@@ -1,39 +1,12 @@
 {
-  "_from": "sendbox",
-  "_id": "sendbox@0.9.7",
-  "_inBundle": false,
-  "_integrity": "sha512-KJkoHHVEAhvfEVZocf5f18dr5Kkthom2T8gVal1F+C3Cl53WI4nRRJcne1JKoJaVsbpRcTvDH9nK5lxX9+UNXA==",
-  "_location": "/sendbox",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "sendbox",
-    "name": "sendbox",
-    "escapedName": "sendbox",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/sendbox/-/sendbox-0.9.7.tgz",
-  "_shasum": "8ae93916dd15c17dc4c458cc35041387202ba9a5",
-  "_spec": "sendbox",
-  "_where": "C:\\Output\\4_PRODUCE\\Dev\\ClassCloudTestInstall",
-  "author": {
-    "name": "Panu Viljamaa"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Simple Alternative to Promises",
-  "license": "Apache 2.0",
-  "main": "sendbox.js",
-  "name": "sendbox",
-  "scripts": {
-    "test": "node test.js"
-  },
-  "version": "0.9.7"
+  "name"        : "sendbox"
+, "version"     : "0.9.8"
+, "description" : "Simple Alternative to Promises"
+, "main"        : "sendbox.js"
+,
+  "scripts":
+  {  "test": "node test.js"
+  }
+  , "author"  : "Panu Viljamaa"
+  , "license" : "Apache 2.0"
 }
