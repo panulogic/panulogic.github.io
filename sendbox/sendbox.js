@@ -73,20 +73,33 @@ a build.
   var CISF;
 	if (typeof module !== "undefined")  // in the browser it is undefined
 	{ module.exports =  SEND_BOX;
-	  CISF =  require('./cisf/cisf.js');
+	 // CISF =  require('./cisf/cisf.js');
 	  if (typeof Path === undefined)
-	  { Path     = require ("path");
+	  { Path = require ("path");
 	  }
 	  if (typeof Fs === undefined)
-	  {  Fs     = require ("fs");
+	  { Fs = require("fs");
 	  }
 
 	} else
 	{ // if on the browser the global CISF is created in CISF.js
   }
 
+/*
+Try to get by without cisf here, only use it
+in the tests so it's easy to include just
+sendbox.js for browser-applications.
+
+Yes seems we were using  cisf apis in only one
+line here in // x (Box, Function);
+
   var { ok, not, x, fails, log, warn, Type, is, r, err, eq
       }  = CISF;
+*/
+
+function  log (s)
+{ console.log(s);
+}
 
 	function w (anArray)
 	{ return (
@@ -278,12 +291,12 @@ function EH_of_fromUrl_node (e)
 		// also first for the not found.
 		// But how ot get the rror up?
 
-	log (`
-	EH_of_fromUrl_node() error trying to 
-	GET the url 
-	${url}
-	${e} 
-	`)
+	 log (`
+EH_of_fromUrl_node() ERROR trying to 
+get the url: 
+${url}
+${e} 
+`)
 }
 		function responseHandler (response)
 		{ response.setEncoding('utf8');
@@ -867,7 +880,7 @@ if (handlerResultsArray === undefined)
 
 
 		 function parallelHandler (...args)
-		 { x(Box, Function);
+		 { // x (Box, Function);
 			 let keys = Object.keys ($specOb);
 			 let $howManyNeeded= keys.length;
 
