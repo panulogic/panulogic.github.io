@@ -113,10 +113,6 @@ let cd = document.getElementById('contentDiv');
 cd.focus();
 cd.click();
 
-			 debugger
-
-
-
 		}
 	  if ( window.addEventListener)
 	  { window.addEventListener ('scroll', onScroll);
@@ -273,7 +269,7 @@ onclick     = "OPEN()"
 		+ thisFileInfo.allDependencies.join ("<br/>")
 		+ "<p></p>"
 	} else
-	{ debugger
+	{
 	}
 
   // You see above this method currently just sets
